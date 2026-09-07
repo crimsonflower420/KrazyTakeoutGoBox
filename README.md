@@ -119,7 +119,7 @@ Intentionally out of scope: uploads, WebDAV, rich UI, in-process identity, bundl
 
 ## Support the project
 
-If KrazyToGo saves you a weekend of yak-shaving, [buy Grant a coffee](https://buymeacoffee.com/grantgollak). The GitHub **Sponsor** button on this repo points at the same page.
+You are strongly encouraged to [buy Grant a coffee](https://buymeacoffee.com/grantgollak). The GitHub **Sponsor** button on this repo points at the same page.
 
 ## Contributing & security
 
