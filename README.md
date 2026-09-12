@@ -69,30 +69,33 @@ Precedence: **flags > env > defaults**.
 
 ### Docker / Podman (Krazy Kontainer)
 
-```bash
-docker build -t krazytogo .
-docker run -d -p 8080:8080 -v "$PWD/data:/data" -e KRAZY_ROOT=/data krazytogo
+Published image (GHCR): `ghcr.io/crimsonflower420/krazytogo:latest`
 
-podman build -t krazytogo .
-podman run -d -p 8080:8080 -v "$PWD/data:/data:Z" -e KRAZY_ROOT=/data krazytogo
+```bash
+mkdir -p data && echo hello > data/hello.txt
+
+docker pull ghcr.io/crimsonflower420/krazytogo:latest
+docker run -d -p 8080:8080 -v "$PWD/data:/data" ghcr.io/crimsonflower420/krazytogo:latest
+
+podman pull ghcr.io/crimsonflower420/krazytogo:latest
+podman run -d -p 8080:8080 -v "$PWD/data:/data:Z" ghcr.io/crimsonflower420/krazytogo:latest
 ```
 
-Compose:
+Compose (pulls the same image):
 
 ```bash
 mkdir -p data
-docker compose up --build -d   # or: podman compose up --build -d
+docker compose up -d   # or: podman compose up -d
 curl -fsS http://127.0.0.1:8080/healthz
 ```
 
-Image is multi-stage → `FROM scratch`, `USER 65532:65532`. Prefer a read-only root filesystem; ensure the data volume is readable by UID 65532.
+To build locally instead: `docker build -t krazytogo .` (or `docker compose up --build`). Image is multi-stage → `FROM scratch`, `USER 65532:65532`. Prefer a read-only root filesystem; ensure the data volume is readable by UID 65532.
 
 ### Kubernetes
 
-Hardened manifests under [`deploy/kubernetes/`](deploy/kubernetes/) (PVC not hostPath; `runAsNonRoot`; `readOnlyRootFilesystem`; `allowPrivilegeEscalation: false`; drop all caps; `/healthz` probes):
+Hardened manifests under [`deploy/kubernetes/`](deploy/kubernetes/) (PVC not hostPath; `runAsNonRoot`; `readOnlyRootFilesystem`; `allowPrivilegeEscalation: false`; drop all caps; `/healthz` probes). Default image: `ghcr.io/crimsonflower420/krazytogo:latest`.
 
 ```bash
-# Build/push your image, then edit the Deployment image:
 kubectl apply -k deploy/kubernetes/
 kubectl -n krazytogo rollout status deploy/krazytogo
 kubectl -n krazytogo port-forward svc/krazytogo 8080:8080
