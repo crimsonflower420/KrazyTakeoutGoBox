@@ -4,6 +4,7 @@
 
 [![CI](https://github.com/crimsonflower420/KrazyToGo/actions/workflows/ci.yml/badge.svg)](https://github.com/crimsonflower420/KrazyToGo/actions/workflows/ci.yml)
 [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?logo=go&logoColor=white)](https://go.dev/)
+[![GHCR](https://img.shields.io/badge/GHCR-krazytogo-2496ED?logo=docker&logoColor=white)](https://ghcr.io/crimsonflower420/krazytogo)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/grantgollak)
 
@@ -13,6 +14,7 @@ Hyper-minimal by design: pure `net/http`, no CGO, no frameworks, and **no** in-p
 |---|---|
 | **Module** | `github.com/crimsonflower420/KrazyToGo` |
 | **Package** | `cmd/krazytogo` |
+| **Image** | [`ghcr.io/crimsonflower420/krazytogo:latest`](https://ghcr.io/crimsonflower420/krazytogo) |
 | **Website** | [krazytogo-website.pages.dev](https://krazytogo-website.pages.dev) |
 | **Footprint** | ~5.4 MiB stripped static binary (`CGO_ENABLED=0`, `-ldflags=-s -w`, linux/amd64); stdlib only |
 | **License** | GPL-3.0 (see [`LICENSE`](LICENSE)) |
