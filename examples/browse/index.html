@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Files</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Files</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<span class="eyebrow">KrazyToGo</span>
-<h1>Files in this folder</h1>
-<p class="lede">This page is yours. Edit the links so they point at real files next to this page.</p>
-</header>
-<h2>List</h2>
-<ul class="files">
-<li><a href="hello.txt"><span>hello.txt</span></a></li>
-<li><a href="photos/"><span>photos/</span></a></li>
-</ul>
+  <header>
+    <span class="eyebrow">KrazyToGo</span>
+    <h1>Files in this folder</h1>
+    <p class="lede">
+      This page is yours. KrazyToGo serves it because it is named
+      <code>index.html</code>. Edit the lists below so they point at
+      real files next to this page. Click a name to open the file.
+    </p>
+  </header>
+
+  <h2>List</h2>
+  <ul class="files">
+    <li><a href="hello.txt"><span class="name">hello.txt</span><span class="meta">file</span></a></li>
+    <li><a href="photos/"><span class="name">photos/</span><span class="meta">folder</span></a></li>
+  </ul>
+
+  <h2>Pictures</h2>
+  <div class="grid">
+    <a href="photos/one.jpg">
+      <img src="photos/one.jpg" alt="one">
+      <span>one.jpg</span>
+    </a>
+    <a href="photos/two.jpg">
+      <img src="photos/two.jpg" alt="two">
+      <span>two.jpg</span>
+    </a>
+  </div>
+
+  <footer>
+    Official image stays tiny. Styling lives on the volume.
+    See <code>examples/browse/README.md</code>.
+  </footer>
 </body>
 </html>

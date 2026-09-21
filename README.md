@@ -119,6 +119,10 @@ flowchart LR
   KTG --> Disk["/data or /perm/files"]
 ```
 
+### Pretty listings (optional)
+
+The built-in directory page is unstyled names. To dress a folder up, copy [`examples/browse/`](examples/browse/) (`index.html` + `style.css`) into your `-root` / volume. FileServer will serve that `index.html` instead of the auto list. Edit the sample links so they point at your files. This does not grow the official image or the process.
+
 ## What this is not
 
 Intentionally out of scope: uploads, WebDAV, rich UI, in-process identity, bundling Tailscale into this process, bcachefs.
