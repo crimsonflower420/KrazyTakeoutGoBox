@@ -1,0 +1,17 @@
+/* KrazyToGo example browse stylesheet. Drop next to index.html in -root. */
+:root { --bg:#f4f1ea; --ink:#1b2a4a; --muted:#5c6570; --teal:#0d7377; --card:#fffdf8; --line:#d0d5dd; }
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+body{max-width:960px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+h1{margin:.35rem 0 .5rem;font-size:1.75rem}
+.eyebrow{color:var(--teal);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.lede{color:var(--muted);max-width:36rem}
+ul.files{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+ul.files li{border-top:1px solid var(--line)}
+ul.files li:first-child{border-top:none}
+ul.files a{display:flex;justify-content:space-between;padding:.7rem 1rem;color:var(--ink);text-decoration:none}
+ul.files a:hover{background:#e8f3f3}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.85rem}
+.grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--ink)}
+.grid img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.grid span{display:block;padding:.45rem .6rem .6rem;font-size:.8rem}
+footer{margin-top:2.5rem;color:var(--muted);font-size:.85rem}
