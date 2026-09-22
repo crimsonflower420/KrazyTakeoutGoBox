@@ -2,13 +2,13 @@
 
 ## Supported versions
 
-KrazyToGo is a small appliance binary. Security fixes land on the latest release
+The Krazy To-Go Box is a small appliance binary. Security fixes land on the latest release
 (and `main`). Older tags are not backported unless a release is still marked supported.
 
 ## Report a vulnerability
 
 Please report security issues privately via GitHub Security Advisories for
-[crimsonflower420/KrazyToGo](https://github.com/crimsonflower420/KrazyToGo),
+[crimsonflower420/KrazyToGo](https://github.com/crimsonflower420/KrazyTakeoutGoBox),
 or email the maintainer listed on the repository.
 
 Do **not** open a public issue for unfixed vulnerabilities.

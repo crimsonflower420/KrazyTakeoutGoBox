@@ -1,4 +1,4 @@
-# Contributing to KrazyToGo
+# Contributing to the Krazy To-Go Box
 
 Thanks for taking an interest. This project stays useful by staying small.
 

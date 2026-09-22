@@ -1,4 +1,4 @@
-# gokrazy sketch for KrazyToGo
+# gokrazy sketch for the Krazy To-Go Box
 
 Same static binary; build with `-tags gokrazy` so defaults become `:80` and `/perm/files`.
 
@@ -10,7 +10,7 @@ gok -i krazytogo new
 
 # Add this package (path to your checkout or module), mkfs for /perm, and Tailscale
 # Example package lines (edit your gokrazy config / go.mod as appropriate):
-#   github.com/crimsonflower420/KrazyToGo/cmd/krazytogo
+#   github.com/crimsonflower420/KrazyTakeoutGoBox/cmd/krazytogo
 #   github.com/gokrazy/mkfs
 #   plus Tailscale gokrazy packages you already use
 

@@ -1,6 +1,6 @@
 # Pretty listings (optional)
 
-KrazyToGo's built-in directory page is a plain list of names. That is
+The Krazy To-Go Box's built-in directory page is a plain list of names. That is
 intentional. The official binary has no theme engine, and a `style.css`
 alone cannot restyle Go's auto-generated listing.
 

@@ -1,8 +1,8 @@
-# KrazyToGo
+# Krazy To-Go Box
 
 **One tiny static Go binary that serves files — the same build on gokrazy, Docker/Podman (Krazy Kontainer), and Kubernetes.**
 
-[![CI](https://github.com/crimsonflower420/KrazyToGo/actions/workflows/ci.yml/badge.svg)](https://github.com/crimsonflower420/KrazyToGo/actions/workflows/ci.yml)
+[![CI](https://github.com/crimsonflower420/KrazyTakeoutGoBox/actions/workflows/ci.yml/badge.svg)](https://github.com/crimsonflower420/KrazyTakeoutGoBox/actions/workflows/ci.yml)
 [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?logo=go&logoColor=white)](https://go.dev/)
 [![GHCR](https://img.shields.io/badge/GHCR-krazytogo-2496ED?logo=docker&logoColor=white)](https://ghcr.io/crimsonflower420/krazytogo)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
@@ -12,17 +12,17 @@ Hyper-minimal by design: pure `net/http`, no CGO, no frameworks, and **no** in-p
 
 | | |
 |---|---|
-| **Module** | `github.com/crimsonflower420/KrazyToGo` |
+| **Module** | `github.com/crimsonflower420/KrazyTakeoutGoBox` |
 | **Package** | `cmd/krazytogo` |
 | **Image** | [`ghcr.io/crimsonflower420/krazytogo:latest`](https://ghcr.io/crimsonflower420/krazytogo) |
-| **Website** | [krazytogo-website.pages.dev](https://krazytogo-website.pages.dev) |
+| **Website** | [krazytogobox.pages.dev](https://krazytogobox.pages.dev) |
 | **Footprint** | ~5.4 MiB stripped static binary (`CGO_ENABLED=0`, `-ldflags=-s -w`, linux/amd64); stdlib only |
 | **License** | GPL-3.0 (see [`LICENSE`](LICENSE)) |
 | **Support** | [Buy Me a Coffee](https://buymeacoffee.com/grantgollak) · GitHub Sponsor button |
 
 ## Why
 
-Most “simple” file servers grow a web UI, upload forms, and half an identity stack. KrazyToGo stays boring on purpose:
+Most “simple” file servers grow a web UI, upload forms, and half an identity stack. The Krazy To-Go Box stays boring on purpose:
 
 - **Same binary everywhere** — gokrazy appliance, `FROM scratch` container, or hardened Kubernetes
 - **Tiny attack surface** — read-only serving, path escape rejected, directory browse is a flag
@@ -34,7 +34,7 @@ Most “simple” file servers grow a web UI, upload forms, and half an identity
 Install the binary:
 
 ```bash
-go install github.com/crimsonflower420/KrazyToGo/cmd/krazytogo@latest
+go install github.com/crimsonflower420/KrazyTakeoutGoBox/cmd/krazytogo@latest
 mkdir -p data && echo hello > data/hello.txt
 krazytogo -root ./data -addr :8080
 # → http://127.0.0.1:8080/hello.txt
