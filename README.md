@@ -1,6 +1,6 @@
 # Krazy To-Go Box
 
-**One tiny static Go binary that serves files — the same build on gokrazy, Docker/Podman (Krazy Kontainer), and Kubernetes.**
+**One tiny static Go binary that serves files — the same build on gokrazy, Docker/Podman, and Kubernetes.**
 
 [![CI](https://github.com/crimsonflower420/KrazyTakeoutGoBox/actions/workflows/ci.yml/badge.svg)](https://github.com/crimsonflower420/KrazyTakeoutGoBox/actions/workflows/ci.yml)
 [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?logo=go&logoColor=white)](https://go.dev/)
@@ -69,7 +69,7 @@ Precedence: **flags > env > defaults**.
 
 ## Deploy
 
-### Docker / Podman (Krazy Kontainer)
+### Docker / Podman
 
 Published image (GHCR): `ghcr.io/crimsonflower420/krazytogo:latest`
 

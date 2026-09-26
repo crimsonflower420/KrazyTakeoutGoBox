@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-# Multi-stage build → scratch (Krazy Kontainer). Same static binary as gokrazy.
+# Multi-stage build → scratch container. Same static binary as gokrazy.
 FROM golang:1.24-alpine AS build
 WORKDIR /src
 COPY go.mod ./

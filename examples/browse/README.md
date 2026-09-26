@@ -24,7 +24,7 @@ krazytogo -root ./data -addr :8080
 # → http://127.0.0.1:8080/
 ```
 
-Krazy Kontainer (same files, same volume):
+Container (same files, same volume):
 
 ```bash
 docker run --rm -p 8080:8080 -v "$PWD/data:/data" \
@@ -39,6 +39,6 @@ one still get the built-in list.
 
 - Not thumbnails. The browser shows the original file when you click it.
   Pre-generate thumbs into the volume if you want a grid of small images.
-- Not a package you `apt` into the official Kontainer. The official image
+- Not a package you `apt` into the official container image. The official image
   stays scratch. Helpers live in other boxes; pages live on the volume.
 - Not a change to `cmd/krazytogo`. Grow the folder, not the process.

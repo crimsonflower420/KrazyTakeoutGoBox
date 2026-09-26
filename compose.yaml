@@ -1,4 +1,4 @@
-# Docker Compose / Podman Compose for Krazy Kontainer.
+# Docker Compose / Podman Compose for the Krazy To-Go Box container image.
 # Default: pull published GHCR image. For a local build, uncomment `build: .`
 # Podman: prefer rootless; use :Z on volumes for SELinux (Fedora/RHEL).
 services:

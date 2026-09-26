@@ -8,7 +8,7 @@ The Krazy To-Go Box is a small appliance binary. Security fixes land on the late
 ## Report a vulnerability
 
 Please report security issues privately via GitHub Security Advisories for
-[crimsonflower420/KrazyToGo](https://github.com/crimsonflower420/KrazyTakeoutGoBox),
+[crimsonflower420/KrazyTakeoutGoBox](https://github.com/crimsonflower420/KrazyTakeoutGoBox),
 or email the maintainer listed on the repository.
 
 Do **not** open a public issue for unfixed vulnerabilities.
